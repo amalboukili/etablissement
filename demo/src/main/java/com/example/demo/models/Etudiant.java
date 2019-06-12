@@ -6,8 +6,11 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+<<<<<<< HEAD
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+=======
+>>>>>>> faa4dec... first commit
 import javax.persistence.Table;
 
 import lombok.AllArgsConstructor;
@@ -25,9 +28,14 @@ public class Etudiant{
     private String nom;
     private String prenom;
     private Date dateNaissance;
+<<<<<<< HEAD
     @ManyToOne
     //Clé etranger par défaut c'est formation_id
     @JoinColumn(name = "ID_FORMATION")
     private Formation formation;
 
  }
+=======
+
+}
+>>>>>>> faa4dec... first commit

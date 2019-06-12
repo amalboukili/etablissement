@@ -32,12 +32,20 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
+<<<<<<< HEAD
 		<!-- <dependency>
+=======
+		<dependency>
+>>>>>>> faa4dec... first commit
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
 			<scope>runtime</scope>
 			<optional>true</optional>
+<<<<<<< HEAD
 		</dependency> -->
+=======
+		</dependency>
+>>>>>>> faa4dec... first commit
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>

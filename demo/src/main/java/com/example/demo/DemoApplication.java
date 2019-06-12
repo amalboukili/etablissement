@@ -1,5 +1,6 @@
 package com.example.demo;
 
+<<<<<<< HEAD
 import java.util.Date;
 
 import com.example.demo.models.Etudiant;
@@ -24,11 +25,19 @@ public class DemoApplication implements CommandLineRunner{
 	//Configurer String data rest pour voir id
 	@Autowired
 	private RepositoryRestConfiguration repositoryRestConfiguration;
+=======
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class DemoApplication {
+>>>>>>> faa4dec... first commit
 
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
 	}
 
+<<<<<<< HEAD
 	@Override
 	public void run(String... args) throws Exception {
 
@@ -46,4 +55,6 @@ public class DemoApplication implements CommandLineRunner{
 		etudiantRepository.save(new Etudiant(null,"Nabila","Nabila",new Date(),f3));
 	}
 
+=======
+>>>>>>> faa4dec... first commit
 }
