@@ -11,7 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.data.rest.core.config.RepositoryRestConfiguration;
+//import org.springframework.data.rest.core.config.RepositoryRestConfiguration;
 
 @SpringBootApplication
 public class DemoApplication implements CommandLineRunner{
@@ -23,7 +23,7 @@ public class DemoApplication implements CommandLineRunner{
 
 	//Configurer String data rest pour voir id
 	@Autowired
-	private RepositoryRestConfiguration repositoryRestConfiguration;
+	//private RepositoryRestConfiguration repositoryRestConfiguration;
 
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
@@ -32,7 +32,7 @@ public class DemoApplication implements CommandLineRunner{
 	@Override
 	public void run(String... args) throws Exception {
 
-		repositoryRestConfiguration.exposeIdsFor(Formation.class,Etudiant.class);
+		
 
 		Formation f1 =formationRepository.save(new Formation(null,"PHP",30,null));
 		Formation f2 = formationRepository.save(new Formation(null,"Java",30,null));
